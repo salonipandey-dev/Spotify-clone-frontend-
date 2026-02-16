@@ -130,3 +130,21 @@ a {
      height: 2rem;
      width:fit-content;
 }
+
+.stickynavbar {
+    position: sticky;
+    top:0;
+    background-color: #121212 ;
+    display:flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding:1rem 0 0 1rem;
+}
+ .navicons {
+    margin-left:0.75rem;
+ }
+ .stickynavoptions {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
