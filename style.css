@@ -25,6 +25,7 @@ body {
     flex:1;
     border-radius:1rem; /**16px*/
     overflow:auto;
+    padding:0 1.5rem 0 1.5rem;
 
 }
 
@@ -163,4 +164,19 @@ a {
     .hide {
         display:none;
     }
+}
+.card{
+    background-color: #232323; 
+    width:150px;
+    border-radius: 0.5rem;
+    padding:1rem;
+}
+.card-container {
+    display:flex;
+}
+
+.card-image{
+    width:100%;
+    border-radius: 0.5rem;
+
 }
