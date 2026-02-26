@@ -250,5 +250,6 @@ a {
 
 .progress-bar {
     width:70%;
+    appearance: none;
 
 }
