@@ -179,7 +179,7 @@ a {
 }
 .card-image {
     width:100%;
-     border-radius: 0.5rem;
+    border-radius: 0.5rem;
 }
 
 .card-title {
@@ -212,7 +212,24 @@ a {
 
 .album {
     width: 25% ;
-    background-color: pink;
+    
+}
+.album-cover {
+    display:flex;
+    justify-content: space-between;
+   
+}
+.album-img {
+    height:3rem;
+    margin: 0.75rem ;
+    padding: 0.75rem;
+}
+.album-name {
+    
+
+}
+.artist{
+
 }
 .player{
     width:50%;
@@ -269,3 +286,4 @@ a {
     border-radius: 50%;
     margin-top: -6px;
 }
+
