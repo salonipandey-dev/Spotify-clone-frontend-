@@ -293,18 +293,17 @@ a {
     accent-color: #1db954;
 }
 
-
 .control {
     width: 25%;
     display: flex;
-    justify-content:space-between;
     align-items: center;
-    
+    gap: 0.8rem;      
+    padding-right: 2rem;  
 }
 
 .volume-bar {
-    width:75%;
+    flex: 1;  
     accent-color: #1db954;
-    margin-right: 2rem;
-    padding-right:0.5rem;
 }
+
+
