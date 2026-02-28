@@ -217,7 +217,6 @@ a {
     color: white;
 }
 
-/* LEFT SECTION */
 .album {
     width: 25%;
     display: flex;
@@ -252,7 +251,7 @@ a {
     opacity: 1;
 }
 
-/* CENTER SECTION */
+
 .player {
     width: 50%;
     text-align: center;
@@ -294,7 +293,7 @@ a {
     accent-color: #1db954;
 }
 
-/* RIGHT SECTION */
+
 .control {
     width: 25%;
     display: flex;
@@ -307,4 +306,5 @@ a {
     width:75%;
     accent-color: #1db954;
     margin-right: 2rem;
+    padding-right:0.5rem;
 }
