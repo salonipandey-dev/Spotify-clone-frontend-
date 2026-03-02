@@ -304,6 +304,11 @@ a {
 .volume-bar {
     flex: 1;  
     accent-color: #1db954;
+
 }
 
+.volume-bar:hover{
+    opacity:1;
 
+
+}
