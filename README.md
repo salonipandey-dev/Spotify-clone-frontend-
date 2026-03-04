@@ -39,9 +39,12 @@ spotify-clone
  How to Run the Project
 
 1. Clone the repository
+https://github.com/salonipandey-dev/Spotify-clone-frontend-.git
 
 git clone 
+
 2. Open the project folder
+
 
 cd spotify clone
 
