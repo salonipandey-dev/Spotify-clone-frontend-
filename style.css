@@ -297,11 +297,12 @@ a {
     width: 25%;
     display: flex;
     align-items: center;
-    gap: 0.8rem;      
+    gap: 10px;      
     padding-right: 2rem;  
 }
 
 .volume-bar {
+    width:100%;
     flex: 1;  
     accent-color: #1db954;
 
