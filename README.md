@@ -20,81 +20,55 @@ CSS3 – Styling and layout
 Flexbox– Responsive layout system
 Font Awesome / Icons – UI icons
 
----
 
-## 📂 Project Structure
+Project Structure
 
-```
 spotify-clone
 │
 ├── index.html
 ├── style.css
 │
-├── assets
+├── picturs
 │   ├── images
 │   └── icons
 │
 └── README.md
-```
 
----
 
-## ⚙️ How to Run the Project
+
+ How to Run the Project
 
 1. Clone the repository
 
-```bash
-git clone https://github.com/your-username/spotify-clone.git
-```
-
+git clone 
 2. Open the project folder
 
-```bash
-cd spotify-clone
-```
+cd spotify clone
 
 3. Open the project
 
-Simply open **index.html** in your browser
-or run using **Live Server in VS Code**.
+Simply open index.html in your browser
+or run using Live Server in VS Code.
 
----
-
-## 🎯 Learning Goals
+Learning Goals
 
 This project helped me understand:
 
-* Building **real-world UI clones**
-* Using **Flexbox for layout alignment**
-* Designing **responsive web interfaces**
-* Structuring frontend projects
+Building real-world UI clones.
+Using Flexbox for layout alignment.
+Designing responsive web interfaces
+Structuring frontend projects.
 
----
+Future Improvements
 
-## 📸 Preview
+Add JavaScript for music playback
+Implement **playlist functionality**
+Improve mobile responsiveness
+Add hover animations and transitions
 
-Add a screenshot of your project here.
+ Author
 
-Example:
-
-```
-assets/preview.png
-```
-
----
-
-## 🔮 Future Improvements
-
-* Add **JavaScript for music playback**
-* Implement **playlist functionality**
-* Improve **mobile responsiveness**
-* Add **hover animations and transitions**
-
----
-
-## 👩‍💻 Author
-
-**Tanu**
+Saloni Pandey 
 Computer Science Student
 Learning **Frontend Development**
 
