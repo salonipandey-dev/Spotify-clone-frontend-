@@ -303,13 +303,17 @@ a {
 
 .volume-bar {
     width:100%;
-    flex: 1;  
+    max-width:120px;
+    cursor:pointer;
     accent-color: #1db954;
 
 }
+@media (max-width: 768px) {
+  .control {
+    width: 120px;
+  }
 
-.volume-bar:hover{
-    opacity:1;
-
-
+  .volume-bar {
+    max-width: 80px;
+  }
 }
