@@ -5,7 +5,6 @@ This project recreates the layout and visual design of Spotify’s web player to
 
 The project focuses purely on UI design, not music playback functionality.
  Features
-
 Spotify-inspired user interface
 Sidebar navigation (Home, Search, Library)
 Recently Played section
