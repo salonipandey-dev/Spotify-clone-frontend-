@@ -1,165 +1,266 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="./picturs/logo.png">
-    <title>Spotify - Web Player: Music for everyone</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="style.css">
-</head>
-</body>
-    <div class="main">
-        <div class="sidebar">
-            <div class="navbar">
-                <div class="navoption" style = "opacity :1">
-                    <i class="fa-solid fa-house"></i>
-                    <a href="#">Home</a>
-                </div>
-                <div class="navoption">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <a href="#">Search</a>
-                </div>
-        
-            </div>
-
-            <div class="library">
-                <div class="options">
-                    <div class="liboption navoption" style="opacity :1">
-                        <img src="./picturs/library_icon.png">
-                        <a href="#" > Your Library </a>  
-                    </div>
-                    <div class="icons">
-                        <i class="fa-solid fa-plus"></i>
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                </div>
-                <div class="lib-box">
-                    <div class="box">
-                        <p class="box-p1">Create your first playlist </p>
-                        <p class="box-p2">It's easy , we'll help you</p>
-                        <button class="badge">Create Playlist</button>
-                    </div>
-                    <div class="box">
-                        <p class="box-p1">Let's find some podcast to follow</p>
-                        <p class="box-p2">We'll you updated on new episodes.</p>
-                        <button class="badge"> Browse podcasts</button>
-                    </div>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101511" />
+    <meta
+      name="description"
+      content="A Spotify-inspired music library by Saloni Pandey. Discover the interface, save favourites, and play your own local audio."
+    />
+    <title>Spotify Clone · Your daily soundtrack</title>
+    <link rel="icon" href="picturs/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to music</a>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Music navigation">
+        <a class="brand" href="./"
+          ><img
+            src="picturs/logo.png"
+            alt=""
+            width="34"
+            height="34"
+          />Spotify<span>CLONE</span></a
+        >
+        <nav class="navigation" aria-label="Main navigation">
+          <button class="nav-item active" data-view="all" aria-current="page">
+            <span aria-hidden="true">⌂</span> Home
+          </button>
+          <button class="nav-item" id="search-nav">
+            <span aria-hidden="true">⌕</span> Search
+          </button>
+          <button class="nav-item" data-view="liked">
+            <span aria-hidden="true">♡</span> Liked tracks
+            <span id="liked-count" class="count">0</span>
+          </button>
+        </nav>
+        <div class="library-label">
+          YOUR LIBRARY <span aria-hidden="true">≡</span>
         </div>
-        <div class="main-content">
-            <div class="stickynavbar">
-                <div class="stickynavicons">
-                    <img src ="picturs\backward_icon.png">
-                    <img src="picturs\forward_icon.png" class="hide">
-                </div>
-                <div class="stickynavoptions">
-                   <button class="badge  nav-items hide">Explore Premium</button>
-                   <button class="badge  nav-items darkbadge" ><i class="fa-solid fa-download" stle="margin-right : 5px"></i> Install</button>
-                   <i class="fa-solid fa-user" ></i>
-                </div>    
-            </div>
-             <h2>Recently Played </h2>
-              <div class="cards-container">
-                <div class="card">
-                    <img src="picturs\card1img.jpeg" class="card-image">
-                    <p class="card-title">Top 50 -Global</p>
-                    <p class="card-info ">Your daily updates of the most played tracks...</p>
-                </div>
-            </div>
-            <h2>Trending now </h2>
-              <div class="cards-container">
-                <div class="card">
-                    <img src="picturs\card2img.jpeg" class="card-image">
-                    <p class="card-title">Mahiya jinna Sona</p>
-                    <p class="card-info ">Darshan raval</p>
-                </div>
-                <div class="card">
-                    <img src="picturs\card3img.jpeg" class="card-image">
-                    <p class="card-title">Mere Pass Tum Ho </p>
-                    <p class="card-info ">Rahat Fateh Ali Khan </p>
-                </div>
-               
-                 <div class="card">
-                    <img src="picturs\card4img.jpeg" class="card-image">
-                    <p class="card-title">Naa Ready From "L..   </p>
-                    <p class="card-info ">Anirudh Ravichandar,Thalapathy Vijay, Asal..</p>
-                </div>   
-            </div>
-            <h2>Featured charts </h2>
-              <div class="cards-container">
-                <div class="card">
-                    <img src="picturs\card5img.jpeg" class="card-image">
-                    <p class="card-title">Top Songs - Global</p>
-                    <p class="card-info ">Your weekly updates of the most played tracks right...</p>
-                </div>
-                
-                <div class="card">
-                    <img src="picturs\card6img.jpeg" class="card-image">
-                    <p class="card-title">Top Songs - India </p>
-                    <p class="card-info ">Your weekly  updates of the most played tracks right...</p>
-                </div>
-                
-                <div class="card">
-                    <img src="picturs\card1img.jpeg" class="card-image">
-                    <p class="card-title">Top 50 -Global</p>
-                    <p class="card-info ">Your daily updates of the most played tracks...</p>
-                </div>
-            </div>
-            <div class="footer">
-                <div class="line"></div>
-            </div>
+        <button class="library-item" data-view="local">
+          <span class="library-art" aria-hidden="true">♫</span
+          ><span
+            ><strong>Local collection</strong
+            ><small id="local-count">Your music, your space</small></span
+          >
+        </button>
+        <div class="import-card">
+          <span class="eyebrow">MAKE IT YOURS</span>
+          <h3>A home for your music.</h3>
+          <p>Add audio from your device and give your favourites a spin.</p>
+          <button class="button light" data-import>
+            Add your music <span aria-hidden="true">＋</span></button
+          ><small>Files stay on your device.</small>
         </div>
-        <div class="music-player">
-               <div class="music-player">
-
-
-                <div class="album">
-                    <img src="./picturs/card2img.jpeg" class="album-img">
-
-                    <div class="album-info">
-                      <h4>Mere Pass Tum Ho</h4>
-                       <p class="artist">Rahat Fateh Ali Khan</p>
-                    </div>
- 
-                   <div class="album-icons">
-                      <i class="fa-regular fa-heart"></i>
-                       <i class="fa-solid fa-image"></i>
-                    </div>
-                </div>
-
-   
-                <div class="player">
-                   <div class="player-control">
-                      <img src="./picturs/player_icon1.png" class="player-control-icon">
-                    <img src="./picturs/player_icon2.png" class="player-control-icon">
-                    <img src="./picturs/player_icon3.png" class="player-control-icon play-btn">
-                    <img src="./picturs/player_icon4.png" class="player-control-icon">
-                     <img src="./picturs/player_icon5.png" class="player-control-icon">
-                   </div>
-
-                <div class="playback-bar">
-                   <span class="current-time">00:00</span>
-                   <input type="range" class="progress-bar" value="0" min="0" max="100">
-                   <span class="total-duration">4:03</span>
-                </div>
-                </div>
-
-   
-                <div class="control">
-                   <i class="fa-solid fa-list"></i>
-                   <i class="fa-solid fa-desktop"></i>
-                   <i class="fa-solid fa-volume-high"></i>
-                  <input type="range" class="volume-bar" min="0" max="100" value="70">
-                </div>
-
-               </div>
+        <div class="sidebar-footer">
+          Made with care by <strong>Saloni Pandey</strong><br />Independent
+          frontend project
         </div>
-        
+      </aside>
+      <main id="main" tabindex="-1">
+        <header class="topbar">
+          <label class="search-box"
+            ><span aria-hidden="true">⌕</span
+            ><input
+              id="search"
+              type="search"
+              placeholder="What do you want to listen to?"
+              aria-label="Search tracks, artists and collections"
+              autocomplete="off"
+            /><kbd>/</kbd></label
+          ><span class="project-tag">FRONTEND EXPLORATION</span
+          ><span class="avatar" aria-label="Saloni Pandey">SP</span>
+        </header>
+        <div class="content">
+          <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-copy">
+              <p class="eyebrow">
+                <span class="live-dot"></span> A LITTLE MUSIC. A BETTER DAY.
+              </p>
+              <h1 id="hero-title">Find your<br />everyday rhythm.</h1>
+              <p>
+                Old favourites. New obsessions.<br />A soundtrack for whatever
+                comes next.
+              </p>
+              <button class="button green" id="explore">
+                Explore the collection <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+              <div class="record">
+                <div class="record-label">
+                  DAILY<br /><b>rotation</b><span>33⅓ RPM · SIDE A</span>
+                </div>
+              </div>
+              <span class="art-caption">SOUNDTRACK YOUR EVERYDAY</span>
+            </div>
+          </section>
+          <div class="filters" role="group" aria-label="Filter collection">
+            <button class="chip active" data-filter="all" aria-pressed="true">
+              All</button
+            ><button class="chip" data-filter="songs" aria-pressed="false">
+              Songs</button
+            ><button class="chip" data-filter="charts" aria-pressed="false">
+              Charts</button
+            ><button class="chip" data-filter="local" aria-pressed="false">
+              On this device
+            </button>
+          </div>
+          <section id="collection" aria-labelledby="collection-title">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow" id="section-kicker">
+                  GOOD MUSIC, GOOD COMPANY
+                </p>
+                <h2 id="collection-title">Made for your rotation</h2>
+              </div>
+              <span id="result-count" class="muted"></span>
+            </div>
+            <div id="cards" class="cards"></div>
+            <div id="empty" class="empty" hidden>
+              <span aria-hidden="true">♫</span>
+              <h3 id="empty-title">No matches yet</h3>
+              <p id="empty-description">Try another track or artist.</p>
+              <button class="button light" id="empty-action">
+                Clear search
+              </button>
+            </div>
+          </section>
+          <section class="bottom-note">
+            <div>
+              <span class="eyebrow">YOUR MUSIC GOES WITH YOU</span>
+              <h3>Press play on something personal.</h3>
+              <p>
+                Import your audio to unlock playback, seeking, shuffle and
+                repeat.
+              </p>
+            </div>
+            <button class="button outline" data-import>
+              Choose audio files ↗
+            </button>
+          </section>
+          <footer class="page-footer">
+            <span>Spotify-inspired. Independently built.</span
+            ><span>HTML · CSS · JavaScript</span>
+          </footer>
+        </div>
+      </main>
     </div>
-</body>
+    <footer class="player" aria-label="Music player">
+      <div class="now-playing">
+        <img
+          id="player-art"
+          src="picturs/card2img.jpeg"
+          alt=""
+          width="52"
+          height="52"
+        />
+        <div>
+          <strong id="player-title">Choose your soundtrack</strong
+          ><span id="player-artist">Add local audio to start listening</span>
+        </div>
+        <button
+          id="player-like"
+          class="icon-button"
+          aria-label="Like selected track"
+          aria-pressed="false"
+          disabled
+        >
+          ♡
+        </button>
+      </div>
+      <div class="playback">
+        <div class="transport">
+          <button
+            id="shuffle"
+            class="icon-button"
+            aria-label="Shuffle"
+            aria-pressed="false"
+          >
+            ⤨</button
+          ><button
+            id="previous"
+            class="icon-button"
+            aria-label="Previous track"
+          >
+            ◀│</button
+          ><button id="play" class="play-button" aria-label="Play">▶</button
+          ><button id="next" class="icon-button" aria-label="Next track">
+            │▶</button
+          ><button
+            id="repeat"
+            class="icon-button"
+            aria-label="Repeat track"
+            aria-pressed="false"
+          >
+            ↻
+          </button>
+        </div>
+        <div class="timeline">
+          <span id="elapsed">0:00</span
+          ><input
+            id="seek"
+            type="range"
+            aria-label="Playback position"
+            min="0"
+            max="100"
+            value="0"
+            step="0.1"
+            disabled
+          /><span id="duration">0:00</span>
+        </div>
+      </div>
+      <div class="player-extras">
+        <button
+          class="icon-button"
+          id="queue-button"
+          aria-label="Open playback queue"
+        >
+          ≡</button
+        ><button
+          class="icon-button"
+          id="mute"
+          aria-label="Mute"
+          aria-pressed="false"
+        >
+          ♪</button
+        ><input
+          type="range"
+          id="volume"
+          aria-label="Volume"
+          min="0"
+          max="1"
+          step="0.01"
+          value="0.7"
+        />
+      </div>
+    </footer>
+    <input
+      type="file"
+      id="audio-files"
+      accept="audio/*,.mp3,.wav,.ogg,.m4a,.flac,.aac"
+      multiple
+      hidden
+    />
+    <audio id="audio" preload="metadata"></audio>
+    <dialog id="queue-dialog">
+      <div class="dialog-heading">
+        <h2>Up next</h2>
+        <button id="close-queue" class="icon-button" aria-label="Close queue">
+          ×
+        </button>
+      </div>
+      <p class="muted">Your imported audio, in playback order.</p>
+      <div id="queue-list"></div>
+    </dialog>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <noscript
+      ><p class="noscript">
+        Enable JavaScript to search the collection and play local audio.
+      </p></noscript
+    >
+  </body>
 </html>
