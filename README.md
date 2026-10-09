@@ -1,76 +1,54 @@
-🎧 Spotify Clone (HTML & CSS)
+# Spotify Clone — Your daily soundtrack
 
-A Spotify Web Player UI Clone built using HTML and CSS.
-This project recreates the layout and visual design of Spotify’s web player to practice modern frontend layout techniques like Flexbox and responsive design.
+A responsive Spotify-inspired frontend built by **Saloni Pandey** with HTML, CSS and vanilla JavaScript. Explore a sample catalogue, save favourites, and play audio from your own device.
 
-The project focuses purely on UI design, not music playback functionality.
- Features
-Spotify-inspired user interface
-Sidebar navigation (Home, Search, Library)
-Recently Played section
-Trending section
-Bottom fixed music player UI
-Volume slider design
-Responsive layout for different screen sizes
+## Features
 
-Tech Stack
-HTML5 – Page structure
-CSS3 – Styling and layout
-Flexbox– Responsive layout system
-Font Awesome / Icons – UI icons
+- Responsive sidebar, album grid, editorial hero and fixed player for desktop and mobile.
+- Search by title or artist; filter songs, chart previews, imported audio and favourites.
+- Like/unlike items with localStorage persistence and graceful fallback when storage is blocked.
+- Import multiple local audio files; play/pause, previous/next, seek, volume, mute, shuffle, repeat and queue.
+- Keyboard-accessible controls, labelled sliders, skip link, reduced-motion support and live status feedback.
+- No build step, framework, external fonts or icon CDN required.
 
+## Run locally
 
-Project Structure
+```bash
+git clone https://github.com/salonipandey-dev/Spotify-clone-frontend-.git
+cd Spotify-clone-frontend-
+python -m http.server 8000
+```
 
-spotify-clone
-│
-├── index.html
-├── style.css
-│
-├── picturs
-│   ├── images
-│   └── icons
-│
-└── README.md
+Open http://localhost:8000. VS Code Live Server also works. Select **Add your music**, choose audio files and select an imported card to play it. Supported formats depend on your browser; MP3 and WAV are good starting points.
 
+## Keyboard controls
 
+- `Tab`: move between controls; `Enter`: activate a focused button.
+- `/`: focus search when not already interacting with a control.
+- `Space`: toggle playback when focus is outside an interactive control.
+- `Escape`: close the queue dialog.
 
- How to Run the Project
+## Project structure
 
-1. Clone the repository
-https://github.com/salonipandey-dev/Spotify-clone-frontend-.git
+- `index.html` — semantic layout and player controls
+- `style.css` — responsive layout, theme and interaction states
+- `script.js` — catalogue, search, local audio and favourites
+- `picturs/` — original project artwork and icons
 
-git clone 
+## Scope and privacy
 
-2. Open the project folder
+This is an independent educational project, not an official Spotify product. Catalogue songs and charts are **visual previews only**; there is no Spotify API connection, streaming catalogue, authentication or premium subscription. Existing artwork is retained from the original project and belongs to its respective owners.
 
+Imported audio uses browser object URLs and is not uploaded. Audio files must be reselected after reloading; favourites persist in the same browser where storage is available. Reimporting the same unchanged file restores its saved favourite. No audio files are distributed with this repository.
 
-cd spotify clone
+## Manual verification
 
-3. Open the project
+1. Search for an artist, try a no-results query, and clear it.
+2. Like a card, open Liked tracks, reload and verify it remains saved.
+3. Import two audio files; verify playback, seek, pause, next/previous, volume, mute, shuffle, repeat and queue selection.
+4. Try an unsupported file and verify the app gives useful feedback.
+5. Check a narrow mobile viewport and keyboard-only navigation.
 
-Simply open index.html in your browser
-or run using Live Server in VS Code.
+## Learning outcomes
 
-Learning Goals
-
-This project helped me understand:
-
-Building real-world UI clones.
-Using Flexbox for layout alignment.
-Designing responsive web interfaces
-Structuring frontend projects.
-
-Future Improvements
-
-Add JavaScript for music playback
-Implement **playlist functionality**
-Improve mobile responsiveness
-Add hover animations and transitions
-
- Author
-
-Saloni Pandey 
-Computer Science Student
-Learning **Frontend Development**
-
+CSS Grid/Flexbox, semantic HTML, responsive design, DOM rendering, event handling, the HTMLMediaElement API, localStorage and handling user-provided files safely with textContent.
