@@ -3,6 +3,10 @@
 A Spotify Web Player UI Clone built using HTML and CSS.
 This project recreates the layout and visual design of Spotify’s web player to practice modern frontend layout techniques like Flexbox and responsive design.
 
+The project f
+A Spotify Web Player UI Clone built using HTML and CSS.
+This project recreates the layout and visual design of Spotify’s web player to practice modern frontend layout techniques like Flexbox and responsive design.
+
 The project focuses purely on UI design, not music playback functionality.
  Features
 Spotify-inspired user interface
@@ -11,6 +15,8 @@ Recently Played section
 Trending section
 Bottom fixed music player UI
 Volume slider design
+Responsive layout for different screen sizes
+
 Responsive layout for different screen sizes
 
 Tech Stack
